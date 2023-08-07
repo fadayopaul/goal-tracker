@@ -1,8 +1,62 @@
+import React from "react";
+
 function App() {
   return (
     <div className="App">
-      <div>
-        <h1>Goal Tracker</h1>
+      <div className="container">
+        <Nav />
+        <Form />
+
+        <GoalTracker />
+      </div>
+    </div>
+  );
+}
+
+function Nav() {
+  return (
+    <div className="nav">
+      <h1 className="logo">GOAL TRACKER</h1>
+      <h4>
+        Every great journey starts with a great destination, keep your
+        aspirations in check with effective goal tracking
+      </h4>
+    </div>
+  );
+}
+
+function Form() {
+  return (
+    <div className="form-container">
+      <div className="form">
+        <input type="text" placeholder="type here" />
+        <button className="btn">input</button>
+      </div>
+    </div>
+  );
+}
+
+function GoalTracker() {
+  return (
+    <div className="goals">
+      <div className="goal">
+        <input type="checkbox" />
+        <span>First Goal</span>
+      </div>
+
+      <div className="goal">
+        <input type="checkbox" />
+        <span>Second Goal</span>
+      </div>
+
+      <div className="goal">
+        <input type="checkbox" />
+        <span>Third Goal</span>
+      </div>
+
+      <div className="goal">
+        <input type="checkbox" />
+        <span>Fourth Goal</span>
       </div>
     </div>
   );

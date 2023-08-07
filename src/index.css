@@ -4,11 +4,109 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 42.5%;
-}
-
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
+  background-color: #d6d6d6;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* 
+=====================
+Navbar
+=====================
+ */
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+
+  background-color: #ff4500;
+}
+
+.nav > h4 {
+  width: 80%;
+  font-family: Helvetica;
+  font-size: 0.6rem;
+  color: #fdfd7a;
+  text-transform: capitalize;
+}
+
+.logo {
+  color: #fff;
+  font-size: 4rem;
+}
+
+/*
+========================
+Form 
+========================
+*/
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: fit-content;
+  padding: 1rem 0;
+  background-color: black;
+}
+
+.form {
+  display: flex;
+}
+
+input {
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  width: 20rem;
+  outline: none;
+}
+input::placeholder {
+  text-transform: capitalize;
+}
+
+.btn {
+  margin-left: 1rem;
+  border: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  border-radius: 2px;
+  padding: 0.2rem 0.5rem;
+  background-color: #fff;
+
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: #ff4500;
+  color: #fff;
+}
+
+/* 
+===========================
+Goals
+===========================
+ */
+.goals {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 10rem;
+}
+
+.goal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  background-color: #fdfd7a;
+  margin: 0 0.2rem;
 }
