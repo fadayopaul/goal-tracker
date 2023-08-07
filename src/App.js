@@ -1,7 +1,9 @@
 function App() {
   return (
     <div className="App">
-      <h1>Goal Tracker</h1>
+      <div>
+        <h1>Goal Tracker</h1>
+      </div>
     </div>
   );
 }
