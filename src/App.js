@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function Form() {
     <div className="form-container">
       <div className="form">
         <input type="text" placeholder="type here" />
-        <button className="btn">input</button>
+        <button className="btn">add</button>
       </div>
     </div>
   );
