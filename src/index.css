@@ -3,7 +3,19 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+html {
+  font-size: 62.5%;
+}
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5rem;
@@ -34,7 +46,7 @@ h1 {
   margin-bottom: 1rem;
 }
 h3 {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
 }
 
 .nav > h4 {
@@ -104,18 +116,28 @@ Goals
  */
 .goals {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
-  grid-gap: 2rem;
-  margin: 5rem;
+  grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+  grid-gap: 3rem;
+  margin: 7rem;
+}
+@media screen and (max-width: 530px) {
+  .goals {
+    margin: 3rem;
+  }
 }
 
 .goal {
   display: flex;
-  padding: 3rem;
+  padding: 4rem;
   align-items: center;
   background-color: #fdfd7a;
 }
-input[type='checkbox'] {
+@media screen and (max-width: 530px) {
+  .goal {
+    padding: 2rem;
+  }
+}
+input[type="checkbox"] {
   margin-right: 0.7rem;
   height: 2rem;
   width: 2rem;
