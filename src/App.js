@@ -40,23 +40,23 @@ function GoalTracker() {
   return (
     <div className="goals">
       <div className="goal">
-        <input type="checkbox" />
-        <span>First Goal</span>
+        <input type="checkbox" className="checkbox-input" />
+        <h3 className="goal-value">First Goal</h3>
       </div>
 
       <div className="goal">
-        <input type="checkbox" />
-        <span>Second Goal</span>
+        <input type="checkbox" className="checkbox-input" />
+        <h3 className="goal-value">Second Goal</h3>
       </div>
 
       <div className="goal">
-        <input type="checkbox" />
-        <span>Third Goal</span>
+        <input type="checkbox" className="checkbox-input" />
+        <h3 className="goal-value">Third Goal</h3>
       </div>
 
       <div className="goal">
-        <input type="checkbox" />
-        <span>Fourth Goal</span>
+        <input type="checkbox" className="checkbox-input" />
+        <h3 className="goal-value">Fourth Goal</h3>
       </div>
     </div>
   );
