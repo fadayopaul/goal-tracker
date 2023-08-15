@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 62.5%;
+  font-size: 85%;
 }
 @media screen and (max-width: 1200px) {
   html {
-    font-size: 56.25%;
+    font-size: 75%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -119,11 +119,16 @@ Goals
   grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
   grid-gap: 3rem;
   margin: 7rem;
+  justify-content: center;
 }
 @media screen and (max-width: 530px) {
   .goals {
     margin: 3rem;
   }
+}
+
+.goal-value {
+  font-size: 1.5rem;
 }
 
 .goal {
@@ -132,6 +137,7 @@ Goals
   align-items: center;
   background-color: #fdfd7a;
 }
+
 @media screen and (max-width: 530px) {
   .goal {
     padding: 2rem;
@@ -141,4 +147,10 @@ input[type="checkbox"] {
   margin-right: 0.7rem;
   height: 2rem;
   width: 2rem;
+}
+
+.delete {
+  display: flex;
+  margin-left: auto;
+  cursor: pointer;
 }
