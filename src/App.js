@@ -74,6 +74,7 @@ function GoalTracker({ goals, setGoals }) {
     confirmed && setGoals(filtered);
   }
 
+  /* Display when goal list is empty */
   if (goals.length === 0) {
     return (
       <div className="empty--list">
