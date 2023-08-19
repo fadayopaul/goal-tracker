@@ -86,10 +86,12 @@ function GoalTracker({ goals, setGoals }) {
   return (
     <div className="goals">
       {goals.map((goal) => (
-        <div key={goal.id} onClick={() => deleteGoal(goal)} className="goal">
+        <div key={goal.id} className="goal">
           <input type="checkbox" className="checkbox-input" />
           <h3 className="goal-value">{goal.description}</h3>
-          <p className="delete">❌</p>
+          <p className="delete" onClick={() => deleteGoal(goal)}>
+            ❌
+          </p>
         </div>
       ))}
     </div>
