@@ -154,3 +154,13 @@ input[type="checkbox"] {
   margin-left: auto;
   cursor: pointer;
 }
+
+.empty--list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.empty--list p {
+  font-style: italic;
+}

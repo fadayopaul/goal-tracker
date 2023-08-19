@@ -15,6 +15,7 @@ function App() {
   );
 }
 
+// Navigation Bat
 function Nav() {
   return (
     <div className="nav">
@@ -27,6 +28,7 @@ function Nav() {
   );
 }
 
+// Input Form
 function Form({ setGoals, goals }) {
   const [add, setAdd] = useState("");
 
@@ -39,6 +41,7 @@ function Form({ setGoals, goals }) {
     };
 
     setGoals([newGoals, ...goals]);
+    setAdd("");
   }
 
   return (
@@ -58,23 +61,31 @@ function Form({ setGoals, goals }) {
   );
 }
 
+//  Goals List
 function GoalTracker({ goals, setGoals }) {
-  function clicked(element) {
+  /* delete goal function */
+  function deleteGoal(element) {
     const { id, description } = element;
-
     const filtered = goals.filter((goal) => goal.id !== id);
 
     const confirmed = window.confirm(
       `Are you sure you want to delete ${description}?`
     );
-
     confirmed && setGoals(filtered);
+  }
+
+  if (goals.length === 0) {
+    return (
+      <div className="empty--list">
+        <p>Goal List is empty, kindly create one!</p>
+      </div>
+    );
   }
 
   return (
     <div className="goals">
       {goals.map((goal) => (
-        <div key={goal.id} onClick={() => clicked(goal)} className="goal">
+        <div key={goal.id} onClick={() => deleteGoal(goal)} className="goal">
           <input type="checkbox" className="checkbox-input" />
           <h3 className="goal-value">{goal.description}</h3>
           <p className="delete">❌</p>
